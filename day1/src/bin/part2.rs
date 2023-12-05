@@ -83,7 +83,7 @@ fn part2(input: &str) -> u64 {
     input
         .lines()
         .map(process_line)
-        .fold(0, |acc, val| acc + val)
+        .sum()
 }
 
 #[cfg(test)]
